@@ -51,7 +51,7 @@ const Navbar = () => {
             width={36}
             height={36}
           />
-          <h5 className="text-white text-2xl font-bold">TalentsArray</h5>
+          <h5 className="text-white text-2xl font-[700]">TalentsArray</h5>
         </div>
       </Link>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
         ) : (
           <ul
             key={index}
-            className="items-center flex gap-[30px] text-white text-base font-medium leading-relaxed">
+            className="items-center flex gap-[30px] text-white text-base font-[500] leading-relaxed">
             <li>
               <Link href={item?.route || ""}>{item.title}</Link>
             </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
       )}
 
       <div className="w-[278px] h-[50px] justify-start items-center gap-[30px] inline-flex ml-20">
-        <button className="text-white text-base font-medium font-['Inter'] leading-none">
+        <button className="text-white text-base font-medium leading-none">
           <Link href="/contacts">Contacts</Link>
         </button>
         <button className="w-[164px] h-[50px] px-8 py-4 bg-blue-500 rounded justify-center items-center gap-2.5 inline-flex">
