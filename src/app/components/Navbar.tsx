@@ -42,7 +42,7 @@ const menuItems: MenuItem[] = [
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between h-[90px] px-[120px] py-[40px] text-white">
+    <nav className="static flex items-center justify-between h-[90px] mb-[162px] px-[120px] py-[40px] text-white">
       <Link href="/">
         <div className="items-center gap-3 flex mr-20">
           <Image
