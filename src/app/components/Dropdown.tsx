@@ -29,7 +29,7 @@ export default function Dropdown(props: Props) {
           {menuItems.map((item) => (
             <Link
               key={item.route}
-              className="text-zinc-900 text-base font-semibold hover:bg-[#E7F7FF] px-[15px] py-[20px] w-[100%]"
+              className="text-zinc-900 text-base font-semibold hover:bg-neutral-blue px-[15px] py-[20px] w-[100%]"
               href={item?.route || ""}>
               {item.title}
             </Link>
