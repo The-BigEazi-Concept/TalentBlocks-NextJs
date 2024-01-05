@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
   title: "TalentsArray",
   description: "This is the home page of the TalentsArray",
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='font-inter'>{children}</body>
+      <body className="font-inter">{children}</body>
     </html>
   );
 }
