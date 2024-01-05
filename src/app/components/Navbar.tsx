@@ -59,10 +59,8 @@ const Navbar = () => {
         item.hasOwnProperty("children") ? (
           <Dropdown item={item} />
         ) : (
-          <ul
-            key={index}
-            className="items-center flex gap-[30px] text-white text-base font-[500] leading-relaxed">
-            <li>
+          <ul className="items-center flex gap-[30px] text-white text-base font-[500] leading-relaxed">
+            <li key={index}>
               <Link href={item?.route || ""}>{item.title}</Link>
             </li>
           </ul>
