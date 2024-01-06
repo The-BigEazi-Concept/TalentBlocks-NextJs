@@ -5,7 +5,7 @@ const Hero = () => {
     <header className="bg-[url('/img/hero.jpg')] bg-center bg-no-repeat bg-cover ">
       <div className="pb-[252px] bg-black bg-opacity-70 flex-col justify-start gap-[162px]">
         <Navbar />
-        <div className="mx-[110px] flex-col justify-center text-white">
+        <div className="mx-[110px] pt-[162px] flex-col justify-center text-white">
           <h1 className="text-center text-8xl font-[600] ">
             Empowering Tomorrow's <span className="text-primary">Tech</span>{" "}
             Leaders Today

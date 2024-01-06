@@ -14,7 +14,7 @@ const config: Config = {
       lg: ["18px", "21.94px"],
       xl: ["20px", "24.38px"],
       "2xl": ["24px", "29.26px"],
-      "3xl": ["28px", "50px"],
+      "3xl": ["36px", "50px"],
       "4xl": ["44px", "58px"],
       "8xl": ["72px", "96px"],
     },
@@ -30,7 +30,7 @@ const config: Config = {
         orange: "#FFA630",
         brown: "#B89687",
         "white-neutral": "#F6F6F6",
-        black: "#131B23",
+        black: "#1C1C1C",
         "neutral-400": "#494F56",
       },
       screens: {
