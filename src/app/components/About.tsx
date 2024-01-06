@@ -8,7 +8,7 @@ const About = () => {
         <h6 className="text-sm text-orange mb-[12px]">
           Welcome to TalentsArray
         </h6>
-        <h2 className="text-[#1c1c1c] text-4xl font-[600] leading-[54px] mb-[24px]">
+        <h2 className="text-black text-4xl font-[600] leading-[54px] mb-[24px]">
           Where Innovation Meets Expertise
         </h2>
         <p className="text-sm text-[#555] font-[400] leading-[30px]">
@@ -19,6 +19,8 @@ const About = () => {
           committed to sculpting the digital leaders of tomorrow.
         </p>
       </div>
+
+      
     </section>
   );
 };
