@@ -31,6 +31,7 @@ const config: Config = {
         brown: "#B89687",
         "white-neutral": "#F6F6F6",
         black: "#1C1C1C",
+        grey: "#CBCBCB",
         "neutral-400": "#494F56",
       },
       screens: {

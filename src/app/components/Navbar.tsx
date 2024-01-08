@@ -55,12 +55,14 @@ const Navbar = () => {
         </div>
       </Link>
 
-      {menuItems.map((item, index) =>
+      {menuItems.map((item) =>
         item.hasOwnProperty("children") ? (
           <Dropdown item={item} />
         ) : (
-          <ul className="items-center flex gap-[30px] text-white text-base font-[500] leading-relaxed">
-            <li key={index}>
+          <ul
+            key={item.title}
+            className="items-center flex gap-[30px] text-white text-base font-[500] leading-relaxed">
+            <li>
               <Link href={item?.route || ""}>{item.title}</Link>
             </li>
           </ul>
