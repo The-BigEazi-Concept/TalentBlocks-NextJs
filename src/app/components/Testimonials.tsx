@@ -23,7 +23,7 @@ const Testimonials = () => {
         </button>
       </div>
       <div className="w-96 h-96 relative">
-      
+        <h1>Hello</h1>
       </div>
     </section>
   );
