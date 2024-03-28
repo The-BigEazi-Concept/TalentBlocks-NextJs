@@ -34,6 +34,10 @@ const menuItems: MenuItem[] = [
         title: "Fullstack Development",
         route: "/fullstack-dev",
       },
+      {
+        title: "Web3 & Blockchain Bootcamp",
+        route: "/Wweb3-blockchain",
+      },
     ],
   },
   { title: "FAQs", route: "/faqs" },
@@ -42,7 +46,7 @@ const menuItems: MenuItem[] = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed bg-black bg-opacity-70 flex items-center justify-between h-[90px] w-[100%] mb-[162px] px-[120px] py-[40px] text-white">
+    <nav className="fixed z-40 bg-black bg-opacity-70 flex items-center justify-between h-[90px] w-[100%] mb-[162px] px-[120px] py-[40px] text-white">
       <Link href="/">
         <div className="items-center gap-3 flex mr-20">
           <Image

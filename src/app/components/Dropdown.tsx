@@ -25,7 +25,7 @@ export default function Dropdown(props: Props) {
           <button>{item.title}</button>
         </li>
         <div
-          className={`absolute top-8 w-[321px] h-[336px] p-[30px] bg-white flex-col justify-start items-start gap-5 inline-flex ${transClass}`}>
+          className={`absolute top-8 w-[321px] p-[30px] bg-white flex-col justify-start items-start gap-5 inline-flex ${transClass}`}>
           {menuItems.map((item) => (
             <Link
               key={item.route}
