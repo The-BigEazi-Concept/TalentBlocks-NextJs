@@ -1,3 +1,4 @@
+// Rendered inside Hero component.
 import Navbar from "./Navbar";
 
 const Hero = () => {
