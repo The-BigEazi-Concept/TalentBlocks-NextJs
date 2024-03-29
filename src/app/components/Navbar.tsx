@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Dropdown from "./Dropdown";
+import { Dropdown } from "./index";
 
 export interface MenuItem {
   title: string;

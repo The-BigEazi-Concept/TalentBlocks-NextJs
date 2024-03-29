@@ -16,6 +16,7 @@ const testimonials = [
       "So thoughtful and wise, and vulnerable in sharing her own challenges with me. Dani is wonderful!",
     fullname: "Mozeedat Adediran",
     field: "Web3 Builder",
+    bgColor: "#BFE7FB",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const testimonials = [
       "So thoughtful and wise, and vulnerable in sharing her own challenges with me. Dani is wonderful!",
     fullname: "Mozeedat Adediran",
     field: "Backend Developer",
+    bgColor: "#FFA630",
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const testimonials = [
       "So thoughtful and wise, and vulnerable in sharing her own challenges with me. Dani is wonderful!",
     fullname: "Mozeedat Adediran",
     field: "Product Designer",
+    bgColor: "#dda0dd",
   },
   {
     id: 4,
@@ -43,12 +46,13 @@ const testimonials = [
       "So thoughtful and wise, and vulnerable in sharing her own challenges with me. Dani is wonderful!",
     fullname: "Mozeedat Adediran",
     field: "Fullsatck Developer",
+    bgColor: "#2898FF",
   },
 ];
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
-  const { id, avatar, twoWordsDesc, comment, fullname, field } =
+  const { id, avatar, twoWordsDesc, comment, fullname, field, bgColor } =
     testimonials[index];
 
   const prevTestimonialHandler = () => {
@@ -98,7 +102,8 @@ const Testimonials = () => {
         <div className="w-96 h-96 relative">
           <div
             key={id}
-            className="bg-orange flex flex-col justify-center items-center w-[413px] h-[442px] px-[48px] py-[34px] absolute right-14 -top-20">
+            style={{ background: bgColor }}
+            className="flex flex-col justify-center items-center w-[413px] h-[442px] px-[48px] py-[34px] absolute right-14 -top-20">
             <div className="flex gap-16 mb-[28px] cursor-pointer">
               <button onClick={prevTestimonialHandler}>
                 <FaArrowLeft />
