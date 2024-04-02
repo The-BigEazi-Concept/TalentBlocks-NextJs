@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "TalentsArray",
   description: "This is the home page of the TalentsArray",
+  icons: {
+    icon: "./favicon.ico",
+  },
 };
 
 export default function RootLayout({

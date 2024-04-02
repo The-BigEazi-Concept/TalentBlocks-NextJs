@@ -17,6 +17,7 @@ const testimonials = [
     fullname: "Mozeedat Adediran",
     field: "Web3 Builder",
     bgColor: "#BFE7FB",
+    textColor: "#1c1c1c",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const testimonials = [
     fullname: "Mozeedat Adediran",
     field: "Backend Developer",
     bgColor: "#FFA630",
+    textColor: "#FFFFFF",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const testimonials = [
     fullname: "Mozeedat Adediran",
     field: "Product Designer",
     bgColor: "#dda0dd",
+    textColor: "#222",
   },
   {
     id: 4,
@@ -47,13 +50,22 @@ const testimonials = [
     fullname: "Mozeedat Adediran",
     field: "Fullsatck Developer",
     bgColor: "#2898FF",
+    textColor: "#FFFFFF",
   },
 ];
 
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
-  const { id, avatar, twoWordsDesc, comment, fullname, field, bgColor } =
-    testimonials[index];
+  const {
+    id,
+    avatar,
+    twoWordsDesc,
+    comment,
+    fullname,
+    field,
+    bgColor,
+    textColor,
+  } = testimonials[index];
 
   const prevTestimonialHandler = () => {
     setIndex((prev) => prev - 1);
@@ -102,7 +114,7 @@ const Testimonials = () => {
         <div className="w-96 h-96 relative">
           <div
             key={id}
-            style={{ background: bgColor }}
+            style={{ background: bgColor, color: textColor }}
             className="flex flex-col justify-center items-center w-[413px] h-[442px] px-[48px] py-[34px] absolute right-14 -top-20">
             <div className="flex gap-16 mb-[28px] cursor-pointer">
               <button onClick={prevTestimonialHandler}>
@@ -119,16 +131,10 @@ const Testimonials = () => {
                 <FaArrowRight />
               </button>
             </div>
-            <h5 className="mb-[21px] text-black text-xl font-semibold">
-              {twoWordsDesc}
-            </h5>
-            <p className="mb-[21px] text-[#343434] text-xl text-center">
-              {comment}
-            </p>
-            <h6 className="mb-[17px] text-base text-black font-medium">
-              {fullname}
-            </h6>
-            <small className="text-[#222] text-xs">{field}</small>
+            <h5 className="mb-[21px] text-xl font-semibold">{twoWordsDesc}</h5>
+            <p className="mb-[21px] text-xl text-center">{comment}</p>
+            <h6 className="mb-[17px] text-base font-medium">{fullname}</h6>
+            <small className="text-xs">{field}</small>
           </div>
         </div>
       </div>
