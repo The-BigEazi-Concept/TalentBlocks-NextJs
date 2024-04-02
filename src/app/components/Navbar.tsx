@@ -1,3 +1,4 @@
+// Rendered inside Hero component.
 "use client";
 
 import Image from "next/image";
@@ -35,7 +36,7 @@ const menuItems: MenuItem[] = [
         route: "/fullstack-dev",
       },
       {
-        title: "Web3 & Blockchain Bootcamp",
+        title: "Web3, Blockchain & Crypto Bootcamp",
         route: "/Wweb3-blockchain",
       },
     ],

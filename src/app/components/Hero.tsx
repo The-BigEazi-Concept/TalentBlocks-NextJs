@@ -1,9 +1,9 @@
-// Rendered inside Hero component.
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <header className="bg-[url('/img/hero.jpg')] bg-center bg-no-repeat bg-cover ">
+    <header className="bg-[url('/img/hero.jpg')] bg-center bg-no-repeat bg-cover">
       <div className="pb-[252px] bg-black bg-opacity-70 flex-col justify-start gap-[162px]">
         <Navbar />
         <div className="mx-[110px] pt-[162px] flex-col justify-center text-white">
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <button className="text-center bg-orange px-[32px] py-[16px] text-sm font-[400] text-white mr-[16px]">
-            Get Started
+            <Link href="/register">Get Started</Link>
           </button>
 
           <div>
