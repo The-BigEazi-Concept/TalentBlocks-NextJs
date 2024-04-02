@@ -7,6 +7,7 @@ import {
   Testimonials,
   Accordion,
   CTAsection,
+  Footer,
 } from "./components/index";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <Accordion />
       <CTAsection />
+      <Footer />
     </main>
   );
 }
