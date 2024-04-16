@@ -6,6 +6,8 @@ import {
   WhyUs,
   Testimonials,
   Accordion,
+  CTAsection,
+  Footer,
 } from "./components/index";
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <WhyUs />
       <Testimonials />
       <Accordion />
+      <CTAsection />
+      <Footer />
     </main>
   );
 }

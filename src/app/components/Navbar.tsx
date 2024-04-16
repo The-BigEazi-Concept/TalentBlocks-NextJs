@@ -1,8 +1,8 @@
+// Rendered inside Hero component.
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import { Dropdown } from "./index";
+import { Dropdown, Logo } from "./index";
 
 export interface MenuItem {
   title: string;
@@ -35,7 +35,7 @@ const menuItems: MenuItem[] = [
         route: "/fullstack-dev",
       },
       {
-        title: "Web3 & Blockchain Bootcamp",
+        title: "Web3, Blockchain & Crypto Bootcamp",
         route: "/Wweb3-blockchain",
       },
     ],
@@ -47,17 +47,12 @@ const menuItems: MenuItem[] = [
 const Navbar = () => {
   return (
     <nav className="fixed z-40 bg-black bg-opacity-70 flex items-center justify-between h-[90px] w-[100%] mb-[162px] px-[120px] py-[40px] text-white">
-      <Link href="/">
-        <div className="items-center gap-3 flex mr-20">
-          <Image
-            src="/img/logo.svg"
-            alt="TalentsArray logo"
-            width={36}
-            height={36}
-          />
-          <h5 className="text-white text-2xl font-[700]">TalentsArray</h5>
-        </div>
-      </Link>
+      <Logo
+      img={"/img/logo.svg"}
+        color={"text-white"}
+        fontSize={"text-2xl"}
+        fontWeight={"font-[700]"}
+      />
 
       {menuItems.map((item) =>
         item.hasOwnProperty("children") ? (
