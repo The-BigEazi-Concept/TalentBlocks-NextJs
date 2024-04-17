@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="bg-neutral-blue py-[76px] px-[120px] flex gap-[89px]">
+    <section id="about-us" className="bg-neutral-blue py-[76px] px-[120px] flex gap-[89px]">
       <Image src="/img/about.svg" alt="about" height={549} width={456} />
       <div className="flex-col justify-center mt-[97px]">
         <h6 className="text-sm text-orange mb-[12px]">

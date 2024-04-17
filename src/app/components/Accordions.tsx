@@ -18,7 +18,7 @@ const faqsData = [
 
 const Accordions = () => {
   return (
-    <section className="p-[100px] bg-neutral-blue">
+    <section id="faqs" className="p-[100px] bg-neutral-blue">
       <h2 className="text-center text-black text-4xl font-semibold mb-14">
         Frequently Asked Questions
       </h2>
