@@ -7,7 +7,7 @@ import Feedbacks from "./Feedbacks";
 const Testimonials = () => {
   return (
     <section className="py-[99px] pl-28 pr-[206px] bg-white ">
-      <div className="justify-center items-center inline-flex gap-[216px] ">
+      <div className="justify-center items-center inline-flex gap-[116px] ">
         <div className="w-96 flex-col justify-start items-start gap-6 inline-flex">
           <h4 className="text-zinc-900 text-5xl font-bold font-['Inter'] leading-10">
             What our Student say!

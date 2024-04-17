@@ -13,7 +13,7 @@ export interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     title: "About Us",
-    route: "/about-us",
+    route: "#about-us",
   },
   {
     title: "Programs ⌵",
@@ -40,7 +40,7 @@ const menuItems: MenuItem[] = [
       },
     ],
   },
-  { title: "FAQs", route: "/faqs" },
+  { title: "FAQs", route: "#faqs" },
   { title: "Blogs", route: "/blogs" },
 ];
 
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       <div className="w-[278px] h-[50px] justify-start items-center gap-[30px] inline-flex ml-20">
         <button className="text-white text-base font-medium leading-none">
-          <Link href="/contacts">Contacts</Link>
+          <Link href="#contacts">Contacts</Link>
         </button>
         <button className="w-[164px] h-[50px] px-8 py-4 bg-blue-500 rounded justify-center items-center gap-2.5 inline-flex">
           <Link href="/available-courses"> Get started</Link>
